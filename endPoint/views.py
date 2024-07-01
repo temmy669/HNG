@@ -22,7 +22,7 @@ def hello(request):
     # Get the weather information based on the location
     temperature = "unknown"
     if lat and lon:
-        weather_api_key = 'YOUR_OPENWEATHERMAP_API_KEY'
+        weather_api_key = 'cc68d14a23ffbd9420015492e9828b3d'
         weather_url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={weather_api_key}'
         try:
             weather_response = requests.get(weather_url)
